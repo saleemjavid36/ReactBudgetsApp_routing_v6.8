@@ -1,6 +1,10 @@
 https://www.youtube.com/watch?v=cy0vEow4KA4&list=PL4cUxeGkcC9iNnY07bh_UPaRIQZcJfARY&index=3&ab_channel=TheNetNinja
 
+https://github.com/coding-in-public/react-router-budget-app/tree/lesson-6
+
+
+
 completed upto 6th video 4:06 minute -- 
 
 layout removing if we get error and nav not showing when 
-error showing
+error showing 
