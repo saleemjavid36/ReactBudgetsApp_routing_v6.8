@@ -19,11 +19,11 @@ export const Main = () => {
     const {userName}=useLoaderData()
   return (
     <div className="layout">
-        <Nav userName={userName}/>
-        <main>
-          <Outlet/>
-        </main>
-          <img src={wave} alt="" />
+      <Nav userName={userName}/>
+      <div>
+        <Outlet/>
       </div>
+      <img src={wave} alt="footer" /> 
+    </div>
   )
 }

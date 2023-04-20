@@ -1,7 +1,38 @@
-import React from 'react'
+import {Form, NavLink} from "react-router-dom"
 
-export const Nav = () => {
+//library
+import {TrashIcon} from '@heroicons/react/24/solid'
+
+// assets
+import logomark from '../assets/logomark.svg'
+
+export const Nav = ({userName}) => {
   return (
-    <div>Nav</div>
+    <nav>
+      <NavLink
+      to="/"
+      aria-label="Go to home"
+      >
+      <img src={logomark} alt="Home logo" height={30}/>
+      <span>HomeBudget</span>
+      </NavLink>
+      {
+        userName && (
+          <Form
+          method="post"
+          action="logout"
+          onSubmit={(event)=>{
+            if(!confirm("Delete user and all data?"))
+            event.preventDefault()
+          }}
+          >
+            <button type="submit" className="btn btn--warning">
+              <span>Delete User</span>
+              <TrashIcon width={20}/>
+            </button>
+          </Form>
+        )
+      }
+    </nav>
   )
 }
